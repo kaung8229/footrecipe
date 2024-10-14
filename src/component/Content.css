@@ -1,0 +1,81 @@
+.food{
+    width: 50%;
+    overflow-y: auto;
+}
+.food::-webkit-scrollbar,
+.recipe::-webkit-scrollbar{
+    width: 5px;
+}
+.food::-webkit-scrollbar-track,
+.recipe::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.food::-webkit-scrollbar-thumb,
+.recipe::-webkit-scrollbar-thumb{
+    background: rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.recipe{
+    width: 50%;
+    overflow-y: auto;
+}
+
+.recipeclose{
+    display: none;
+}
+
+.foodItemList{
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1150px) {
+    .foodItemList{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    .food{
+        width: 100%;
+    }
+    .recipe{
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        width: 60%;
+        transition: 0.3s;
+    }
+    .recipe.show{
+        transform: translateX(0%);
+        box-shadow: -10px 5px 40px 20px rgba(0,0,0,0.1);
+    }
+    .recipeclose{
+        display: inline-block;
+    }
+    .foodItemList{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .recipe{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .foodItemList{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 370px) {
+    .foodItemList{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+
+    <link rel="stylesheet" href="../tailwind/main.css">
+
+    <link rel="stylesheet" href="../index.css">
+
+    <link rel="stylesheet" href="./food.css">
+</head>
+<body>
+    <div class='relative rounded-lg overflow-x-hidden flex justify-between gap-5 p-5'>
+        <div class="relative h-full pb-5 food">
+            <h1 class="sticky top-0 bg-white text-center text-slate-600 text-2xl font-bold underline decoration-wavy underline-offset-8 pb-8 pt-5">Food</h1>
+
+            <div class="foodItemList">
+                <div>
+                    <div class="w-full h-40 rounded-lg overflow-hidden">
+                        <img src="./sample.jpg" class="size-full object-cover" alt="">
+                    </div>
+                    <h3 class="text-xl font-medium my-2">Title</h3>
+                    <button class="bg-indigo-400 hover:bg-indigo-500 font-medium rounded-lg px-4 py-2">View Recipe</button>
+                </div>
+            </div>
+        </div>
+        <div class="h-full bg-white border rounded-lg flex flex-col p-5 recipe">
+            <h1 class="sticky top-0 bg-white text-slate-600 text-2xl font-bold underline decoration-wavy underline-offset-8 pb-8">Recipe</h1>
+            <div class="">
+                <div class="w-full h-64">
+                    <img src="./sample.jpg" class="size-full object-cover" alt="">
+                </div>
+                <h1 class="text-slate-600 text-xl font-bold my-3">Title</h1>
+                <ul class="flex flex-wrap gap-3">
+                    <li class="bg-indigo-100 rounded-full text-indigo-600 font-medium px-3 py-1">Time - 10 minutes</li>
+                    <li class="bg-green-100 rounded-full text-green-600 font-medium px-3 py-1">Food type - vegetarian</li>
+                </ul>
+                <div class="my-8">
+                    <h1 class="text-slate-600 text-xl font-bold my-2">Ingredients</h1>
+                    <ol class="list-decimal pl-5">
+                        <li>
+                            <div class="flex">
+                                <p class="w-32">apple</p>
+                                <span>- 5 pcs</span>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <h1 class="text-slate-600 text-xl font-bold my-2">Instructions</h1>
+                    <ol class="list-decimal pl-5">
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam veritatis maiores asperiores incidunt suscipit perspiciatis alias ex tenetur delectus, tempora sint nihil, aut aliquid soluta quisquam odit. Officiis, temporibus unde!
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam veritatis maiores asperiores incidunt suscipit perspiciatis alias ex tenetur delectus, tempora sint nihil, aut aliquid soluta quisquam odit. Officiis, temporibus unde!
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

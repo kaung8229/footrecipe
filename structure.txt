@@ -1,0 +1,37 @@
+Container
+> URL
+> API_KEY
+> foodDatas, setFoodDatas
+> isLoading, setIsLoading
+> isRecipeLoad, setIsRecipeLoad
+
+Banner
+
+Search          ->  Content                     ->  Food                ->  FoodItem
+- setFoodDatas      - foodDatas                     - foodDatas(Loop)       - food
+- setIsLoading      - isLoading                     - isLoading             - setIsShow
+- url               - isRecipeLoad                  - setIsRecipeLoad       - setFoodId
+- api               - setIsRecipeLoad               - setIsShow             - setIsRecipeLoad
+                    - api                           - setFoodId
+                    > isShow, setIsShow
+                    > foodId, setFoodId
+                    > recipeInfo, setRecipeInfo
+                                                ->  Recipe              ->  RecipeBanner
+                                                    - isShow                - recipeInfo
+                                                    - setIsShow
+                                                    - foodId
+                                                    - recipeInfo
+                                                    - setRecipeInfo
+                                                    - isRecipeLoad
+                                                    - setIsRecipeLoad
+                                                    - api
+                                                                        ->  RecipeIngredients
+                                                                            - recipeInfo
+                                                                            
+                                                                        ->  RecipeInstructions
+                                                                            - recipeInfo
+        
+                    
+                    
+
+
