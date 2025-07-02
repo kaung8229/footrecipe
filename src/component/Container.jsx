@@ -4,7 +4,7 @@ import Search from './Search';
 import Content from './Content';
 
 const URL = `https://api.spoonacular.com/recipes/complexSearch`;
-const API_KEY = "7f2eec02f8d04bc98dd4e52220fe00db";
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 function Container() {
     const [foodDatas,setFoodDatas] = useState([]);
